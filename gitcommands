@@ -1,0 +1,11 @@
+> git config --global --user.email
+> git config --global --user.name
+> cd Desktop
+> mkdir hub4engineers
+> git init
+> vi hub4engineers
+> :wq
+> git status
+> git add hub4engineers
+> git commit -m "moving file from working area to staging area"
+> git commit --am
