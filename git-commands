@@ -1,3 +1,4 @@
+
 > git config --global --user.email
 > git config --global --user.name
 > cd Desktop
@@ -7,12 +8,40 @@
 > :wq
 > git status
 > git add hub4engineers
+> git add -a
+> git config --global --user.name
+> git config --global --user.email
+> git config --global --list
+> ssh-keygen --> id_rsa.pub, id_rsa
+> ssh-keygen -t dsa --> id_dsa.pub, id_dsa
+> ls -la ~/.ssh --> To check ssh keys
+> ssh -T git@github.com
+> cat ~/.ssh/id_rsa.pub
+> cat ~/.ssh/known_hosts
 > git commit -m "moving file from working area to staging area"
 > git commit --amend -m "to change commit msg"
 > git commit -a -m "msg" -->to move the modified file from working area to staging area
+> git remote -v --> to check local repo is integrated with remote repo
+> git remote add alias name(ms) <remote repo url>
+> git push ms master
 > git log
 > git git show <commit id>
-> git show --pretty="" --name-only <commit id>
-> git remote -v --> to check local repo is integrated with remote repo
-> git remote add <remote repo url>
-
+> git show --pretty="" --name-only <commit id> 
+> touch test.py 
+> git reset test.py --> it will come back from staging area to working area
+> git revert <commit id> --> it will delete the newly created file and delete the contents of modified file
+> git clean -n --> displays the files that are going to delete
+> git clena -f --> to delete the files
+> git branch 
+> git branch testing
+> git checkout testing
+> git branch -d development
+> git branch -m development stage --> to change branch name
+> git merge testing --> to integrate the changes from testing branch to current branch
+> git checkout -b development --> creates development branch and makes it  as main branch
+> git push ms --all 
+> git branch -r --> displays remote branches
+> git branch -a --> displays all branches
+> git push ms :development --> to delete a branch in remote repo
+> git stash save "incomplete work"
+> git stash apply
