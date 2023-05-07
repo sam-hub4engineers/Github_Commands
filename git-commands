@@ -1,4 +1,3 @@
-
 > git config --global --user.email
 > git config --global --user.name
 > cd Desktop
@@ -45,3 +44,11 @@
 > git push ms :development --> to delete a branch in remote repo
 > git stash save "incomplete work"
 > git stash apply
+> git stash list
+> git stash drop
+> git cherry-pick <commit id>
+> git clone <url> --> to download the code ino locla repo first time
+> git pull origin master --> to download the code into working area
+> git fetch origin master --> first code will come into local repo
+> git merge --> then code will come into working area
+> git rebase development -->It will combine sequence of commits
